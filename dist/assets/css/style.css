@@ -64,22 +64,22 @@ header {
     padding-top: 25.8px;
 }
 
-.headerNav {
+.gnav {
     max-width: 650px;
     width: 50%;
     padding: 52px 0 0;
 }
 
-.headerNavList {
+.gnavList {
     display: flex;
     justify-content: space-between;
 }
 
-.headerNavList-item {
+.gnavList-item {
     width: 25%;
 }
 
-.headerNavList-item__link {
+.gnavList-item__link {
     position: relative;
     display: flex;
     justify-content: center;
@@ -89,8 +89,8 @@ header {
     font-weight: normal;
 }
 
-.headerNavList-item__link--active::after,
-.headerNavList-item__link:hover::after {
+.gnavList-item__link--active::after,
+.gnavList-item__link:hover::after {
     content: "";
     position: absolute;
     bottom: 0;
