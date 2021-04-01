@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* common
+----------------------------------------------------------------*/
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  font-size: 16px;
+  color: #AAA;
+} 
+
+li {
+  list-style-type: none;
+}
+
+li,p,a,h1,h2,h3,h4,h5,h6 {
+  color: #2C2C2C;
+  margin-bottom: 0;
+
+}  
+
+ul,li,a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
