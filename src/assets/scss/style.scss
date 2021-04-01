@@ -1,0 +1,10 @@
+@import './setting/config';
+@import './setting/function';
+
+@import './mixin/_btn.scss'; //必要なmixinファイル
+
+@import './base/reset';
+@import './base/base';
+
+@import './module/header';  //必要なmoduleファイル
+@import './module/footer';

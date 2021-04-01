@@ -1,0 +1,510 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* common */
+body {
+    font-weight: bold;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 16px;
+    color: #AAA;
+} 
+
+li {
+    list-style-type: none;
+  }
+
+li,p,a,h1,h2,h3,h4,h5,h6 {
+    color: #2C2C2C;
+    margin-bottom: 0;
+
+}  
+
+ul,li,a {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*inner */
+.inner {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    border-bottom: 1px solid #0F3470;
+}
+
+.headerContents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    max-width: 176px;
+    padding-top: 25.8px;
+}
+
+.headerNav {
+    max-width: 650px;
+    width: 50%;
+    padding: 52px 0 0;
+}
+
+.headerNavList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNavList-item {
+    width: 25%;
+}
+
+.headerNavList-item__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0 41px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+}
+
+.headerNavList-item__link--active::after,
+.headerNavList-item__link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #66CCCF;
+}
+
+.headerRightContents {
+    max-width: 300px;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.opinionText {
+    font-size: 12px;
+    font-weight: normal;
+    color: #AAA;
+}
+
+.opinionTextIcon {
+    display: inline-block;
+    max-width: 22px;
+    font-size: 16px;
+    color: #AAA;
+    margin-right: 11px;
+}
+
+.headerRightBtnArea {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 21px;
+}
+
+.headerRightBtn {
+    max-width: 117px;
+    width: 50%;
+}
+.headerRightBtn:nth-last-of-type(1) {
+    margin-left: 11px;
+}
+
+.headerRightBtn__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    height: 48px;
+    font-size: 15px;
+}
+
+.headerRightBtn__link--blue {
+    background: #11367B;
+    color: #fff;
+}
+
+.headerRightBtn__link--white {
+    border: 1px solid #0F3470;
+}
+
+/* mv */
+.mv {
+    height: 300px;
+    background-color: #11367B;
+}
+
+.mvInner {
+    background-image: url("../images/mv__image.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.mv__text {
+    text-align: center;
+    color: #fff;
+    font-size: 74px;
+    padding-top: 144px;
+    font-family:"Yu Mincho", "游明朝", YuMincho, "游明朝体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: normal;
+}
+
+/* pankuzuArea */
+.pankuzuArea {
+    background-color: #F2F4F8;
+}
+
+.pankuzuList {
+    padding: 15px 0;
+}
+
+.pankuzuListItem {
+    position: relative;
+    display: inline;
+    font-size: 13px;
+}
+
+.pankuzuListItem:not(:nth-last-of-type(1))::after {
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: -19px;
+    line-height: 1;
+}
+
+.pankuzuListItem:not(:nth-last-of-type(1)) {
+    margin-right: 35px;
+}
+
+
+/* contents */
+.contents {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 126px;
+}
+
+/* mainContents */
+.mainContents {
+    max-width: 990px;
+    width: 100%;
+    padding-top: 45px;
+}
+
+/* loginItemsArea */
+.loginItemsArea {
+    display: flex;
+    justify-content: space-between;
+    max-width: 718px;
+    width: 100%;
+    height: 34px;
+    margin: 0 auto;
+}
+
+.loginItemsArea-item {
+    max-width: 84px;
+}
+
+.loginItemsArea-item__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 12px;
+    background-color: #F2F4F8;
+    border: 1px solid #D5D5D5;
+    color: #404040;
+}
+
+/* interview */
+.interview {
+    padding-top: 25px;
+    margin-bottom: 90px;
+}
+
+.interviewItem:not(:nth-last-of-type(1)) {
+    margin-bottom: 15px;
+}
+
+.interviewItemLink {
+    display: flex;
+    background-color: #F2F4F8;
+    height: 126px;
+    padding: 15px;
+}
+
+.interviewItemDate {
+    display: flex;
+    align-items: center;
+    max-width: 184px;
+    position: relative;
+}
+
+.interviewItemDate::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 58.9px;
+    top: 20%;
+    left: 28%;
+    background-color: #D6D6D6;
+    transform: rotate(45deg);
+}
+
+.interviewItemDate__text {
+    font-size: 34px;
+    color: #3875D9;
+}
+
+.interviewItemDate__month {
+    align-self: flex-start;
+}
+.interviewItemDate__day {
+    align-self: flex-end;
+}
+.interviewItemDate__week {
+    align-self: flex-end;
+    font-size: 16px;
+}
+
+.interviewItemText {
+    position: relative;
+    max-width: 609px;
+    width: 100%;
+    padding-left: 36.5px;
+    padding-right: 36.5px;
+}
+.interviewItemText::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 68px;
+    top: calc(50% - 34px);
+    left: 0;
+    background-color: #D6D6D6;
+}
+
+.interviewItemText__top,
+.interviewListItem-text__top {
+    display: inline-block;
+    background: #939393;
+    color: #fff;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 17px;
+    font-size: 12px;
+}
+
+.interviewItemImg_image {
+    max-width: 170px;
+    height: 100%;
+}
+
+/* interviewList */
+.interviewListItem {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.interviewListItem-link {
+    display: flex;
+    padding: 20px 0;
+}
+
+.interviewListItem:nth-of-type(1) .interviewListItem-link {
+    padding-top: 0;
+}
+
+.interviewListItem-image {
+    max-width: 325px;
+}
+
+.interviewListItem-text {
+    width: 100%;
+    padding: 0 20px 0 40px;
+}
+
+.interviewListItem-text__text {
+    padding-bottom: 30px;
+}
+
+/* pickup */
+.pickup {
+    margin-bottom: 142px;
+}
+
+.pickup__title,
+.interviewList__title {
+    position: relative;
+    border-bottom: 3px solid #D8D8D8;
+    padding-bottom: 18px;
+    margin-bottom: 42px;
+}
+
+.pickup__title::after,
+.interviewList__title::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 181px;
+    height: 3px;
+    background: #11367B;
+}
+
+.pickupContents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pickupContentsItem {
+    max-width: 470px;
+}
+
+.pickupContentsItemLink {
+    display: block;
+}
+
+.pickupContentsItem__text {
+    padding: 20px 0 28px;
+}
+
+.pickupContentsItem__date,
+.interviewListItem-text__date {
+    font-size: 16px;   
+    font-weight: normal;
+}
+
+/* newmember */
+
+.newmember__title {
+    position: relative;
+    border-bottom: 3px solid #D8D8D8;
+    padding-bottom: 18px;
+    margin-bottom: 42px;
+}
+
+.newmember__title::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 181px;
+    height: 3px;
+    background: #11367B;
+}
+
+.newmemberContents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newmemberContentsItem {
+    max-width: 278px;
+    text-align: center;
+}
+
+.newmemberContentsItemLink {
+    display: block;
+}
+
+.newmemberContentsItem__name {
+    padding: 27px 0;
+}
+
+/* paging */
+section.paging {
+    padding-top: 58px;
+}
+
+.pagingContentArea {
+    padding: 46px 0;
+    text-align: center;
+    background-color: #F2F4F8;
+}
+
+/* sidebar */
+.sidebar {
+    max-width: 300px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.sidebarHead {
+    margin-bottom: 62px;
+}
+
+.sidebarBody__title {
+    background: #11367B;
+    color: #fff;
+    padding: 15px 18px;
+    margin-bottom: 20px;
+}
+
+.sidebarMemberItem:not(:nth-last-of-type(1)) {
+    margin-bottom: 30px;
+}
+
+.sidebarMemberItemLink {
+    display: block;
+}
+
+.sidebarMemberItem__location {
+    font-size: 16px;
+    padding: 12px 0;
+}
+
+.sidebarMemberItem__address {
+    font-size: 14px;
+}
+
+/* footer */
+.footerContents {
+    padding: 51px 0 31px;
+    text-align: center;
+    border-top: 15px solid #F2F4F8;
+}
+
+.footerLogo {
+    max-width: 176px;
+    margin: 0 auto;
+}
+
+.footerTitle {
+    margin-bottom: 51px;
+    font-size: 44px;
+    font-weight: normal;
+    color: #11367B;
+}
+
+.footerCopyright {
+    display: inline-block;
+    padding-top: 28px;
+    font-size: 12px;
+    font-weight: normal;
+}

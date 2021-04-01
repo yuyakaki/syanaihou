@@ -1,0 +1,53 @@
+<!-- 変数値宣言 -->
+<%
+var data = {
+  <!-- ファイル名設定 -->
+  fileName: 'top'
+}
+%>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web社内報</title>
+  <link rel="stylesheet" href="assets/css/reboot.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <%- include('common/_header', { data: data }); %>
+
+  <main class="main">
+
+    <div class="<%= data.fileName %>">
+
+      <!-- メインビジュアル -->
+      <%- include('common/_mv', { data: data }); %>
+
+      <div class="inner">
+        <div class="contents">
+
+          <!-- メインコンテンツ -->
+          <%- include('common/_topContent', { data: data }); %>
+
+          <!-- サイドコンテンツ -->
+          <%- include('common/_sidebar', { data: data }); %>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <%- include('common/_footer', { data: data }); %>
+
+</body>
+
+</html>
