@@ -1,55 +1,16 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
-/* common */
-body {
-    font-weight: bold;
-    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-p {
-    font-size: 20px;
-}
-
-span {
-    font-size: 16px;
-    color: #AAA;
-} 
-
-li {
-    list-style-type: none;
-  }
-
-li,p,a,h1,h2,h3,h4,h5,h6 {
-    color: #2C2C2C;
-    margin-bottom: 0;
-
-}  
-
-ul,li,a {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-img {
-    width: 100%;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-/*inner */
+/* inner
+----------------------------------------------------------------*/
 .inner {
     max-width: 1330px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-/* header */
+/* header
+----------------------------------------------------------------*/
 header {
     border-bottom: 1px solid #0F3470;
 }
@@ -62,42 +23,6 @@ header {
 .headerLogo {
     max-width: 176px;
     padding-top: 25.8px;
-}
-
-.gnav {
-    max-width: 650px;
-    width: 50%;
-    padding: 52px 0 0;
-}
-
-.gnavList {
-    display: flex;
-    justify-content: space-between;
-}
-
-.gnavList-item {
-    width: 25%;
-}
-
-.gnavList-item__link {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 17px 0 41px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: normal;
-}
-
-.gnavList-item__link--active::after,
-.gnavList-item__link:hover::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #66CCCF;
 }
 
 .headerRightContents {
@@ -152,9 +77,47 @@ header {
     border: 1px solid #0F3470;
 }
 
-/* mv */
+/* gNav
+----------------------------------------------------------------*/
+.gNav {
+    max-width: 650px;
+    width: 50%;
+    padding: 52px 0 0;
+}
+
+.gNavList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gNavList-item {
+    width: 25%;
+}
+
+.gNavList-item__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0 41px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+}
+
+.gNavList-item__link--active::after,
+.gNavList-item__link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #66CCCF;
+}
+
+/* mv
+----------------------------------------------------------------*/
 .mv {
-    height: 300px;
     background-color: #11367B;
 }
 
@@ -163,19 +126,17 @@ header {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 23.08vw;
 }
 
 .mv__text {
     text-align: center;
     color: #fff;
     font-size: 74px;
-    padding-top: 144px;
-    font-family:"Yu Mincho", "游明朝", YuMincho, "游明朝体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-    font-weight: normal;
 }
 
-/* pankuzuArea */
+/* pankuzuArea
+----------------------------------------------------------------*/
 .pankuzuArea {
     background-color: #F2F4F8;
 }
@@ -202,22 +163,23 @@ header {
     margin-right: 35px;
 }
 
-
-/* contents */
+/* contents
+----------------------------------------------------------------*/
 .contents {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 126px;
+    padding-top: 3.85vw;
 }
 
-/* mainContents */
+/* mainContents
+----------------------------------------------------------------*/
 .mainContents {
-    max-width: 990px;
-    width: 100%;
-    padding-top: 45px;
+    width: 80%;
+    padding-right: 6.15vw;
 }
 
-/* loginItemsArea */
+/* loginItemsArea
+----------------------------------------------------------------*/
 .loginItemsArea {
     display: flex;
     justify-content: space-between;
@@ -241,7 +203,8 @@ header {
     color: #404040;
 }
 
-/* interview */
+/* interview
+----------------------------------------------------------------*/
 .interview {
     padding-top: 25px;
     margin-bottom: 90px;
@@ -326,7 +289,6 @@ header {
     height: 100%;
 }
 
-/* interviewList */
 .interviewListItem {
     border-bottom: 1px solid #D8D8D8;
 }
@@ -353,7 +315,8 @@ header {
     padding-bottom: 30px;
 }
 
-/* pickup */
+/* pickup
+----------------------------------------------------------------*/
 .pickup {
     margin-bottom: 142px;
 }
@@ -400,8 +363,8 @@ header {
     font-weight: normal;
 }
 
-/* newmember */
-
+/* newmember
+----------------------------------------------------------------*/
 .newmember__title {
     position: relative;
     border-bottom: 3px solid #D8D8D8;
@@ -437,7 +400,8 @@ header {
     padding: 27px 0;
 }
 
-/* paging */
+/* paging
+----------------------------------------------------------------*/
 section.paging {
     padding-top: 58px;
 }
@@ -448,15 +412,15 @@ section.paging {
     background-color: #F2F4F8;
 }
 
-/* sidebar */
+/* sidebar
+----------------------------------------------------------------*/
 .sidebar {
     max-width: 300px;
-    width: 100%;
-    padding-top: 50px;
+    width: 20%;
 }
 
 .sidebarHead {
-    margin-bottom: 62px;
+    margin-bottom: 4.77vw;
 }
 
 .sidebarBody__title {
@@ -483,28 +447,43 @@ section.paging {
     font-size: 14px;
 }
 
-/* footer */
+/* footer
+----------------------------------------------------------------*/
+.footerWrap {
+    background-color: #11367B;
+}
 .footerContents {
-    padding: 51px 0 31px;
-    text-align: center;
-    border-top: 15px solid #F2F4F8;
+    display: flex;
+    padding: 51px 0 31px 13.23vw;
 }
 
 .footerLogo {
-    max-width: 176px;
-    margin: 0 auto;
+    max-width: 166px;
 }
 
-.footerTitle {
-    margin-bottom: 51px;
-    font-size: 44px;
-    font-weight: normal;
-    color: #11367B;
+.footerNav {
+    width: 703px;
+}
+
+.footerNavList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerNavItemTtl a,
+.footerNavColItem a,
+.footerCopyright {
+    font-size: 16px;
+    color: #fff;
 }
 
 .footerCopyright {
-    display: inline-block;
     padding-top: 28px;
     font-size: 12px;
-    font-weight: normal;
+    text-align: center;
+}
+
+@media screen and (min-width: 1331px) {
+    .footerContents {
+    }
 }
