@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
+
 /* inner
 ----------------------------------------------------------------*/
 .inner {
@@ -17,17 +18,19 @@ header {
 
 .headerContents {
     display: flex;
-    justify-content: space-between;
 }
 
 .headerLogo {
     max-width: 176px;
     padding-top: 25.8px;
+    margin-right: auto;
 }
 
 .headerRightContents {
-    max-width: 300px;
+    max-width: 230px;
+    width: 17.7%;
     padding-top: 15px;
+    margin-left: auto;
     text-align: right;
 }
 
@@ -52,20 +55,21 @@ header {
 }
 
 .headerRightBtn {
-    max-width: 117px;
-    width: 50%;
+    width: 110px;
+    /* width: calc(50% - 5px); */
 }
-.headerRightBtn:nth-last-of-type(1) {
+/* .headerRightBtn:nth-last-of-type(1) {
     margin-left: 11px;
-}
+} */
 
 .headerRightBtn__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 117px;
     height: 48px;
     font-size: 15px;
+    color: #0F3470;
+    border-radius: 5px;
 }
 
 .headerRightBtn__link--blue {
@@ -122,6 +126,7 @@ header {
 }
 
 .mvInner {
+    position: relative;
     background-image: url("../images/mv__image.png");
     background-position: center center;
     background-size: cover;
@@ -133,6 +138,14 @@ header {
     text-align: center;
     color: #fff;
     font-size: 74px;
+}
+
+.mv__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 166px;
 }
 
 /* pankuzuArea
@@ -454,20 +467,29 @@ section.paging {
 }
 .footerContents {
     display: flex;
-    padding: 51px 0 31px 13.23vw;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 45px 0 43px;
+    margin: 0 auto;
 }
 
 .footerLogo {
     max-width: 166px;
+    padding-top: 16px;
 }
 
 .footerNav {
-    width: 703px;
+    width: 100%;
+    margin-left: 86px;
 }
 
 .footerNavList {
     display: flex;
     justify-content: space-between;
+}
+
+.footerNavItem {
+    width: 20%;
 }
 
 .footerNavItemTtl a,
@@ -477,13 +499,38 @@ section.paging {
     color: #fff;
 }
 
+.footerNavColItem a {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.footerNavColItem a::before {
+    content: "・";
+}
+
 .footerCopyright {
-    padding-top: 28px;
+    padding: 16px 0;
     font-size: 12px;
     text-align: center;
 }
 
+
+/* レイアウト調整
+----------------------------------------------------------------*/
+.text-c {
+    text-align: center;
+  }
+  
+.text-l {
+text-align: left;
+}
+
+.text-r {
+text-align: right;
+}
+
 @media screen and (min-width: 1331px) {
-    .footerContents {
+    .mvInner {
+        height: 300px;
     }
 }

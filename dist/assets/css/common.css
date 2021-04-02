@@ -4,10 +4,11 @@
 ----------------------------------------------------------------*/
 body {
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 p {
@@ -42,3 +43,8 @@ img {
 a:hover {
   text-decoration: none;
 }
+
+.ml80 {
+  margin-left: 6.15vw;
+}
+
