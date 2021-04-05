@@ -328,52 +328,72 @@ header {
     padding-bottom: 30px;
 }
 
-/* pickup
+/* new
 ----------------------------------------------------------------*/
-.pickup {
+.new {
     margin-bottom: 142px;
 }
 
-.pickup__title,
+.new__title,
 .interviewList__title {
     position: relative;
-    border-bottom: 3px solid #D8D8D8;
-    padding-bottom: 18px;
-    margin-bottom: 42px;
+    margin-bottom: 29px;
+    padding-left: 23px;
 }
 
-.pickup__title::after,
-.interviewList__title::after {
+.new__title::before,
+.interviewList__title::before {
     content: "";
     position: absolute;
-    bottom: -3px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
-    width: 181px;
-    height: 3px;
+    width: 6px;
+    height: 30px;
     background: #11367B;
+    border-radius: 10px;
 }
 
-.pickupContents {
+.newContents {
     display: flex;
     justify-content: space-between;
 }
 
-.pickupContentsItem {
-    max-width: 470px;
+.newContentsItem {
+    max-width: 460px;
 }
 
-.pickupContentsItemLink {
+.newContentsItemLink {
     display: block;
 }
 
-.pickupContentsItem__text {
-    padding: 20px 0 28px;
+p.newContentsItem-image {
+    margin-bottom: 20px;
 }
 
-.pickupContentsItem__date,
+.newContentsItem__label {
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 7px 17px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #9CA4B2;
+}
+
+.newContentsItem__text {
+    margin-bottom: 25px;
+}
+
+.newContentsItem__date,
 .interviewListItem-text__date {
-    font-size: 16px;   
+    font-size: 12px;   
     font-weight: normal;
+    color: #8D8D8D;
 }
 
 /* newmember
