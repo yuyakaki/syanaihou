@@ -181,14 +181,14 @@ header {
 .contents {
     display: flex;
     justify-content: space-between;
-    padding-top: 3.85vw;
+    padding-top: 50px;
 }
 
 /* mainContents
 ----------------------------------------------------------------*/
 .mainContents {
     width: 80%;
-    padding-right: 6.15vw;
+    padding-right: 80px;
 }
 
 /* loginItemsArea
@@ -216,133 +216,23 @@ header {
     color: #404040;
 }
 
-/* interview
-----------------------------------------------------------------*/
-.interview {
-    padding-top: 25px;
-    margin-bottom: 90px;
-}
-
-.interviewItem:not(:nth-last-of-type(1)) {
-    margin-bottom: 15px;
-}
-
-.interviewItemLink {
-    display: flex;
-    background-color: #F2F4F8;
-    height: 126px;
-    padding: 15px;
-}
-
-.interviewItemDate {
-    display: flex;
-    align-items: center;
-    max-width: 184px;
-    position: relative;
-}
-
-.interviewItemDate::before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 58.9px;
-    top: 20%;
-    left: 28%;
-    background-color: #D6D6D6;
-    transform: rotate(45deg);
-}
-
-.interviewItemDate__text {
-    font-size: 34px;
-    color: #3875D9;
-}
-
-.interviewItemDate__month {
-    align-self: flex-start;
-}
-.interviewItemDate__day {
-    align-self: flex-end;
-}
-.interviewItemDate__week {
-    align-self: flex-end;
-    font-size: 16px;
-}
-
-.interviewItemText {
-    position: relative;
-    max-width: 609px;
-    width: 100%;
-    padding-left: 36.5px;
-    padding-right: 36.5px;
-}
-.interviewItemText::before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 68px;
-    top: calc(50% - 34px);
-    left: 0;
-    background-color: #D6D6D6;
-}
-
-.interviewItemText__top,
-.interviewListItem-text__top {
-    display: inline-block;
-    background: #939393;
-    color: #fff;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    padding: 6px 10px;
-    margin-bottom: 17px;
-    font-size: 12px;
-}
-
-.interviewItemImg_image {
-    max-width: 170px;
-    height: 100%;
-}
-
-.interviewListItem {
-    border-bottom: 1px solid #D8D8D8;
-}
-
-.interviewListItem-link {
-    display: flex;
-    padding: 20px 0;
-}
-
-.interviewListItem:nth-of-type(1) .interviewListItem-link {
-    padding-top: 0;
-}
-
-.interviewListItem-image {
-    max-width: 325px;
-}
-
-.interviewListItem-text {
-    width: 100%;
-    padding: 0 20px 0 40px;
-}
-
-.interviewListItem-text__text {
-    padding-bottom: 30px;
-}
-
 /* new
 ----------------------------------------------------------------*/
 .new {
-    margin-bottom: 142px;
+    margin-bottom: 105px;
 }
 
 .new__title,
-.interviewList__title {
+.specialList__title,
+.newMember__title {
     position: relative;
     margin-bottom: 29px;
     padding-left: 23px;
 }
 
 .new__title::before,
-.interviewList__title::before {
+.specialList__title::before,
+.newMember__title::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -361,21 +251,31 @@ header {
 
 .newContentsItem {
     max-width: 460px;
+    width: 48%;
 }
 
 .newContentsItemLink {
     display: block;
 }
 
-p.newContentsItem-image {
+.newContentsItem-image {
+    position: relative;
     margin-bottom: 20px;
 }
+.newContentsItem-image::before {
+    content: "NEW";
+    position: absolute;
+    right: 0;
+    padding: 8px 10px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #FFA033;
+}
 
-.newContentsItem__label {
+.articleItemLabel {
     display: inline-block;
     min-width: 80px;
     text-align: center;
-    margin-bottom: 10px;
     padding: 7px 17px;
     font-size: 11px;
     font-weight: bold;
@@ -385,52 +285,81 @@ p.newContentsItem-image {
     background-color: #9CA4B2;
 }
 
+.articleItemLabel + .articleItemLabel {
+    margin-left: 10px;
+}
+
 .newContentsItem__text {
-    margin-bottom: 25px;
+    margin: 10px 0 25px;
 }
 
 .newContentsItem__date,
-.interviewListItem-text__date {
+.specialListItem-text__date {
     font-size: 12px;   
     font-weight: normal;
     color: #8D8D8D;
 }
 
-/* newmember
+
+/* special
 ----------------------------------------------------------------*/
-.newmember__title {
-    position: relative;
-    border-bottom: 3px solid #D8D8D8;
-    padding-bottom: 18px;
-    margin-bottom: 42px;
+.special {
+    padding-top: 25px;
+    margin-bottom: 90px;
 }
 
-.newmember__title::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 181px;
-    height: 3px;
-    background: #11367B;
+article.specialItem {
+    margin-bottom: 20px;
 }
 
-.newmemberContents {
+.specialItemLink {
+    display: flex;
+    background-color: #F2F4F8;
+    /* height: 126px; */
+    padding: 20px;
+}
+
+.specialItemImg {
+    max-width: 200px;
+    width: 50%;
+}
+
+.specialItemText {
+    padding-left: 30px;
+}
+
+span.specialItemText__date {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.specialItemText__text {
+    padding-top: 23px;
+}
+
+/* newMember
+----------------------------------------------------------------*/
+.newMemberContents {
     display: flex;
     justify-content: space-between;
 }
 
-.newmemberContentsItem {
-    max-width: 278px;
+.newMemberContentsItem {
+    max-width: 215px;
     text-align: center;
 }
 
-.newmemberContentsItemLink {
+.newMemberContentsItemLink {
     display: block;
 }
 
-.newmemberContentsItem__name {
-    padding: 27px 0;
+.newMemberContentsItem__position {
+    display: inline-block;
+    padding: 23px 0 7px;
+    font-size: 14px;
+    color: #4D4D4D;
 }
 
 /* paging
@@ -448,12 +377,16 @@ section.paging {
 /* sidebar
 ----------------------------------------------------------------*/
 .sidebar {
-    max-width: 300px;
+    max-width: 260px;
     width: 20%;
 }
 
 .sidebarHead {
-    margin-bottom: 4.77vw;
+    margin-bottom: 80px;
+}
+
+.sidebarHeadLink {
+    display: block;
 }
 
 .sidebarBody__title {
@@ -537,16 +470,8 @@ section.paging {
 
 /* レイアウト調整
 ----------------------------------------------------------------*/
-.text-c {
-    text-align: center;
-  }
-  
-.text-l {
-text-align: left;
-}
-
-.text-r {
-text-align: right;
+.mb20 {
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1331px) {
