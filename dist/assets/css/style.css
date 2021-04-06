@@ -122,6 +122,7 @@ header {
 /* mv
 ----------------------------------------------------------------*/
 .mv {
+    margin-bottom: 0;
     background-color: #11367B;
 }
 
@@ -219,20 +220,16 @@ header {
 /* new
 ----------------------------------------------------------------*/
 .new {
-    margin-bottom: 105px;
+    /* margin-bottom: 105px; */
 }
 
-.new__title,
-.specialList__title,
-.newMember__title {
+.contentsTitle {
     position: relative;
     margin-bottom: 29px;
     padding-left: 23px;
 }
 
-.new__title::before,
-.specialList__title::before,
-.newMember__title::before {
+.contentsTitle::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -357,9 +354,45 @@ span.specialItemText__date {
 
 .newMemberContentsItem__position {
     display: inline-block;
-    padding: 23px 0 7px;
+    padding: 23px 0 0;
     font-size: 14px;
     color: #4D4D4D;
+}
+
+.newMemberContentsItem__name {
+    font-weight: bold;
+}
+
+/* articleListBtn
+----------------------------------------------------------------*/
+.articleListBtn {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.articleListBtn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #e5e5e5;
+}
+
+.articleListBtn a::after {
+    content: "→";
+    position: absolute;
+    right: 20px;
+}
+
+.articleListBtn a:hover {
+    color: #fff;
+    background-color: #11367B;
 }
 
 /* paging
@@ -381,19 +414,12 @@ section.paging {
     width: 20%;
 }
 
-.sidebarHead {
+.sidebarItem {
     margin-bottom: 80px;
 }
 
-.sidebarHeadLink {
+.sidebarItemLink {
     display: block;
-}
-
-.sidebarBody__title {
-    background: #11367B;
-    color: #fff;
-    padding: 15px 18px;
-    margin-bottom: 20px;
 }
 
 .sidebarMemberItem:not(:nth-last-of-type(1)) {
@@ -407,10 +433,6 @@ section.paging {
 .sidebarMemberItem__location {
     font-size: 16px;
     padding: 12px 0;
-}
-
-.sidebarMemberItem__address {
-    font-size: 14px;
 }
 
 /* footer
@@ -472,6 +494,10 @@ section.paging {
 ----------------------------------------------------------------*/
 .mb20 {
     margin-bottom: 20px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1331px) {
