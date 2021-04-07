@@ -16,7 +16,7 @@ header {
     border-bottom: 1px solid #0F3470;
 }
 
-.headerContents {
+.headerContent {
     display: flex;
 }
 
@@ -26,7 +26,7 @@ header {
     margin-right: auto;
 }
 
-.headerRightContents {
+.headerRightContent {
     max-width: 230px;
     width: 17.7%;
     padding-top: 15px;
@@ -177,17 +177,18 @@ header {
     margin-right: 35px;
 }
 
-/* contents
+/* content
 ----------------------------------------------------------------*/
-.contents {
+.content {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    margin-bottom: 84px;
 }
 
-/* mainContents
+/* mainContent
 ----------------------------------------------------------------*/
-.mainContents {
+.mainContent {
     width: 80%;
     padding-right: 80px;
 }
@@ -217,19 +218,19 @@ header {
     color: #404040;
 }
 
-/* new
+/* panels
 ----------------------------------------------------------------*/
-.new {
+.panels {
     /* margin-bottom: 105px; */
 }
 
-.contentsTitle {
+.contentTitle {
     position: relative;
     margin-bottom: 29px;
     padding-left: 23px;
 }
 
-.contentsTitle::before {
+.contentTitle::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -241,25 +242,27 @@ header {
     border-radius: 10px;
 }
 
-.newContents {
+.panelsContent {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.newContentsItem {
+.panelsContentItem {
     max-width: 460px;
     width: 48%;
+    margin-bottom: 55px;
 }
 
-.newContentsItemLink {
+.panelsContentItemLink {
     display: block;
 }
 
-.newContentsItem-image {
+.panelsContentItem-image {
     position: relative;
     margin-bottom: 20px;
 }
-.newContentsItem-image::before {
+.panelsContentItem.new .panelsContentItem-image::before {
     content: "NEW";
     position: absolute;
     right: 0;
@@ -286,92 +289,99 @@ header {
     margin-left: 10px;
 }
 
-.newContentsItem__text {
+.panelsContentItem__text {
     margin: 10px 0 25px;
 }
 
-.newContentsItem__date,
-.specialListItem-text__date {
+.panelsContentItem__date,
+.listsListItem-text__date {
     font-size: 12px;   
     font-weight: normal;
     color: #8D8D8D;
 }
 
 
-/* special
+/* lists
 ----------------------------------------------------------------*/
-.special {
+.lists {
     padding-top: 25px;
     margin-bottom: 90px;
 }
 
-article.specialItem {
+article.listsItem {
     margin-bottom: 20px;
 }
 
-.specialItemLink {
+.listsItemLink {
     display: flex;
     background-color: #F2F4F8;
     /* height: 126px; */
     padding: 20px;
 }
 
-.specialItemImg {
+.listsItemImg {
     max-width: 200px;
     width: 50%;
 }
 
-.specialItemText {
+.listsItemText {
     padding-left: 30px;
 }
 
-span.specialItemText__date {
+span.listsItemText__date {
     display: inline-block;
     margin-right: 20px;
     font-size: 14px;
     color: #4D4D4D;
 }
 
-.specialItemText__text {
+.listsItemText__text {
     padding-top: 23px;
 }
 
 /* newMember
 ----------------------------------------------------------------*/
-.newMemberContents {
+.newMemberContent {
     display: flex;
     justify-content: space-between;
 }
 
-.newMemberContentsItem {
+.newMemberContentItem {
     max-width: 215px;
     text-align: center;
 }
 
-.newMemberContentsItemLink {
+.newMemberContentItemLink {
     display: block;
 }
 
-.newMemberContentsItem__position {
+.newMemberContentItem__position {
     display: inline-block;
     padding: 23px 0 0;
     font-size: 14px;
     color: #4D4D4D;
 }
 
-.newMemberContentsItem__name {
+.newMemberContentItem__name {
     font-weight: bold;
 }
 
-/* articleListBtn
+/* panels
 ----------------------------------------------------------------*/
-.articleListBtn {
-    width: 300px;
+
+
+
+
+
+/* listBtn
+----------------------------------------------------------------*/
+.listBtn {
+    max-width: 300px;
     height: 60px;
     margin: 0 auto;
 }
 
-.articleListBtn a {
+.listBtn a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -384,13 +394,13 @@ span.specialItemText__date {
     box-shadow: 0 5px 5px #e5e5e5;
 }
 
-.articleListBtn a::after {
+.listBtn a::after {
     content: "→";
     position: absolute;
     right: 20px;
 }
 
-.articleListBtn a:hover {
+.listBtn a:hover {
     color: #fff;
     background-color: #11367B;
 }
@@ -422,8 +432,8 @@ section.paging {
     display: block;
 }
 
-.sidebarMemberItem:not(:nth-last-of-type(1)) {
-    margin-bottom: 30px;
+.sidebarMemberItem {
+    margin-bottom: 35px;
 }
 
 .sidebarMemberItemLink {
@@ -432,7 +442,7 @@ section.paging {
 
 .sidebarMemberItem__location {
     font-size: 16px;
-    padding: 12px 0;
+    padding-top: 11px;
 }
 
 /* footer
@@ -440,7 +450,7 @@ section.paging {
 .footerWrap {
     background-color: #11367B;
 }
-.footerContents {
+.footerContent {
     display: flex;
     justify-content: center;
     max-width: 1000px;
@@ -498,6 +508,10 @@ section.paging {
 
 .mb40 {
     margin-bottom: 40px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1331px) {
