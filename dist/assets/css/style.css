@@ -183,7 +183,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    margin-bottom: 84px;
 }
 
 /* mainContent
@@ -366,11 +365,92 @@ span.listsItemText__date {
     font-weight: bold;
 }
 
-/* panels
+/* articleDetails
 ----------------------------------------------------------------*/
+.articleDetails {
+    max-width: 702px;
+    margin-left: auto;
+}
 
+.a-detailsHeader {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #707070;
+}
 
+.a-detailsTitle {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+}
 
+.a-detailsHeaderWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleDetails .articleItemLabel {
+    color: #000;
+    background-color:initial;
+    border: 1px solid #AFAFAF;
+    font-weight: 400;
+}
+
+.a-detailsBody {
+    padding-top: 50px;
+}
+
+.a-detailsBodyTxt {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 2.1;
+    letter-spacing: 1.6px;
+}
+
+.a-detailsBodyImg {
+    /* margin-bottom: 50px; */
+}
+
+.a-detailsBodyList {
+    background-color: #F8F8F4;
+    margin-bottom: 30px;
+    padding: 30px 40px;
+}
+
+.a-detailsBodyItem {
+    font-size: 16px;
+    margin-bottom: 14px;
+    letter-spacing: 1.1px;
+}
+
+.a-detailsBodyLink {
+    display: inline-block;
+    margin-bottom: 29px;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    color: #2478EA;
+}
+
+.a-detailsBodyDt,
+.a-detailsBodyDd {
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.a-detailsBodyDd {
+    padding-left: 11px;
+}
+
+.a-detailsBodyDd::before {
+    position: relative;
+    content: "→";
+    left: -11px;
+}
+
+.a-detailsBodyImgWrap {
+    justify-content: space-between;
+}
 
 
 /* listBtn
@@ -422,6 +502,7 @@ section.paging {
 .sidebar {
     max-width: 260px;
     width: 20%;
+    margin-bottom: 84px;
 }
 
 .sidebarItem {
@@ -489,7 +570,8 @@ section.paging {
     padding-top: 10px;
 }
 
-.footerNavColItem a::before {
+.footerNavColItem a::before,
+.a-detailsBodyItem::before {
     content: "・";
 }
 
@@ -502,6 +584,11 @@ section.paging {
 
 /* レイアウト調整
 ----------------------------------------------------------------*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .mb20 {
     margin-bottom: 20px;
 }

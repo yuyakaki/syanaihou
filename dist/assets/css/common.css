@@ -44,6 +44,11 @@ section {
   margin-bottom: 100px;
 }
 
+/* a {
+  font-size: 16px;
+  color: #2478EA;
+} */
+
 a:hover {
   text-decoration: none;
 }
