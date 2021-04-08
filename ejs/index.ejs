@@ -17,6 +17,10 @@ var data = {
   <link rel="stylesheet" href="assets/css/reboot.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/tab.js"></script>
 </head>
 
 <body>
@@ -24,27 +28,28 @@ var data = {
   <!-- header -->
   <%- include('common/_header', { data: data }); %>
 
-  <main class="main">
+  <main>
+    <div class="main">
 
-    <div class="<%= data.fileName %>">
+      <div class="<%= data.fileName %>">
 
-      <!-- メインビジュアル -->
-      <%- include('common/_mvTop', { data: data }); %>
+        <!-- メインビジュアル -->
+        <%- include('common/_mvTop', { data: data }); %>
 
-      <div class="inner">
-        <div class="content">
+        <div class="inner">
+          <div class="content">
 
-          <!-- メインコンテンツ -->
-          <%- include('common/_memberList', { data: data }); %>
+            <!-- メインコンテンツ -->
+            <%- include('common/_memberList', { data: data }); %>
 
-          <!-- サイドコンテンツ -->
-          <%- include('common/_sidebar', { data: data }); %>
+            <!-- サイドコンテンツ -->
+            <%- include('common/_sidebar', { data: data }); %>
 
+          </div>
         </div>
+
       </div>
-
     </div>
-
   </main>
 
   <!-- footer -->

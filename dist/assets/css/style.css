@@ -12,8 +12,8 @@
 
 /* header
 ----------------------------------------------------------------*/
-header {
-    border-bottom: 1px solid #0F3470;
+.header {
+    /* border-bottom: 1px solid #0F3470; */
 }
 
 .headerContent {
@@ -581,12 +581,135 @@ section.paging {
     text-align: center;
 }
 
+/* ログインページ
+----------------------------------------------------------------*/
+.loginHeaderContent {
+    padding-top: 240px;
+}
+
+.loginHeaderLogo {
+    max-width: 166px;
+    margin: 0 auto;
+}
+
+.loginInner {
+    max-width: 626px;
+    margin: 0 auto;
+}
+
+.loginFormWrap {
+    padding-top: 77px;
+}
+
+.inputWrap {
+    margin-bottom: 45px;
+}
+
+.inputWrap label {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.inputArea {
+    width: 100%;
+    height: 60px;
+}
+
+.loginBtnWrap {
+    padding: 75px 0 114px;
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 422px;
+    height: 102px;
+    color: #fff;
+    background-color: #11367B;
+    font-size: 26px;
+}
+
+.passInquiry a {
+    font-size: 16px;
+    color: #464442;
+}
+
+.loginFooterContent {
+    padding-top: 274px;
+}
+
+/* メンバー一覧
+----------------------------------------------------------------*/
+.tabPanelList {
+    justify-content: space-between;
+}
+
+.tabPanelItem {
+    width: calc(25% - 10px);
+}
+
+.tabPanelItem a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #11367B;
+    border-radius: 12px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #11367B;
+}
+
+.tabContentsWrap {
+    padding-top: 64px;
+}
+.tabContents {
+    display: none;
+}
+
+.tabContents.active {
+    display: block;
+}
+
+.tabContentsList {
+    position: relative;
+    justify-content: space-between;
+}
+
+.tabContentsItemBlank {
+    width: calc(25% - 25px);
+    height: 0;
+}
+
+.tabContentsItem {
+    width: calc(25% - 25px);
+}
+
+
+.tabContentItemName {
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabContentItemName span {
+    display: block;
+    font-size: 16px;
+    color: #4D4D4D;
+}
 
 /* レイアウト調整
 ----------------------------------------------------------------*/
 .flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.mb0 {
+    margin-bottom: 0;
 }
 
 .mb20 {
