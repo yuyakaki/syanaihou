@@ -687,8 +687,12 @@ section.paging {
 
 .tabContentsItem {
     width: calc(25% - 25px);
+    margin-bottom: 61px;
 }
 
+.tabContentsItem a {
+    display: block;
+}
 
 .tabContentItemName {
     text-align: center;
@@ -697,7 +701,7 @@ section.paging {
 
 .tabContentItemName span {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     color: #4D4D4D;
 }
 
