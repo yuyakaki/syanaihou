@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
 
 
 /* inner
@@ -367,7 +370,8 @@ span.listsItemText__date {
 
 /* articleDetails
 ----------------------------------------------------------------*/
-.articleDetails {
+.articleDetails,
+.memberArticleDetails {
     max-width: 702px;
     margin-left: auto;
 }
@@ -452,6 +456,69 @@ span.listsItemText__date {
     justify-content: space-between;
 }
 
+/* memberArticleDetails
+----------------------------------------------------------------*/
+.m-detailsHeader {
+    max-width: 660px;
+    margin-bottom: 84px;
+}
+
+.m-detailsHeaderImgWrap {
+    position: relative;
+}
+
+.m-detailsHeaderImg {
+    position: relative;
+    margin-bottom: 34px;
+    padding-top: 50px;
+    z-index: 1;
+}
+
+.m-detailsHeaderImgBg {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 485px;
+    height: 291px;
+    padding: 14px 40px 0 0;
+    font-size: 18px;
+    background-color: #3ABCC9;
+    text-align: right;
+    line-height: 1;
+    color: #fff;
+}
+
+.m-detailsTitle {
+    font-size: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m-detailsTitle__date {
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+.m-detailsItem {
+    margin-bottom: 50px;
+}
+
+.m-detailsItem__ttl {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #707070;
+}
+
+.m-detailsItem__ttl span {
+    display: inline-block;
+    margin-right: 19px;
+    color: #3ABCC9;
+}
+
+.m-detailsItem__txt {
+    padding-top: 14px;
+    line-height: 2.12;
+}
 
 /* listBtn
 ----------------------------------------------------------------*/
@@ -727,6 +794,18 @@ section.paging {
 .mb50 {
     margin-bottom: 50px;
 }
+
+.mb72 {
+    margin-bottom: 72px;
+}
+
+/* フォント調整
+----------------------------------------------------------------*/
+.mon {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+}
+
 
 @media screen and (min-width: 1331px) {
     .mvInner {

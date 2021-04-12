@@ -21,6 +21,7 @@ var data = {
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/tab.js"></script>
+
 </head>
 
 <body>
@@ -40,7 +41,7 @@ var data = {
           <div class="content">
 
             <!-- メインコンテンツ -->
-            <%- include('common/_memberList', { data: data }); %>
+            <%- include('common/_member-articleDetails', { data: data }); %>
 
             <!-- サイドコンテンツ -->
             <%- include('common/_sidebar', { data: data }); %>
